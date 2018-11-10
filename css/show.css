@@ -1,0 +1,39 @@
+#main, html {
+	background-color:#f50057;
+;
+}
+
+h1, h2 {
+	margin-top: -10px;
+	margin-bottom: -5px;
+}
+
+#show {
+	width:100%;
+	max-width: 960px;
+	min-width: 320px;
+	height:100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+#content {
+	width:auto;
+	max-width: 580px;
+	min-width: 300px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#showimage {
+	width:100%;
+}
+
+#archivetitle {
+	margin-top: 50px;
+}
+
+#showlist {
+	margin-top: 50px;
+}

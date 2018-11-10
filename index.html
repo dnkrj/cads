@@ -1,0 +1,72 @@
+---
+layout: default
+---
+<div class="page" id="cover">
+	<div id="contents">
+		<div id="spacer"></div>
+		<img src="/img/logo.png"/>
+		<ul id="sections">
+			<a href="#whatson" class="smoothScroll"><li>What's&nbsp;On</li></a>
+			<a href="#about" class="smoothScroll"><li>About&nbsp;CADS</li></a>
+			<a href="#getinvolved" class="smoothScroll"><li>Get&nbsp;Involved</li></a>
+		</ul>
+	</div>
+</div>
+
+<div class="page" id="whatson">
+	<div class="section"><div class="content">
+		<h1 class="uplink"><a href="#cover" class="smoothScroll">▲</a> What's On</h1>
+    	<ul id="showlist">
+        	{% for post in site.posts reversed%}
+        	{% if post.date >= site.time %}
+        	<li>
+        	  <a href="{{ post.url }}">
+        	    <p>{{post.showtimes | upcase}} - {{post.showtype | upcase}}</p>
+        	    <h2>{{ post.title }}</h2>
+        	    <p>{{ post.showprice | upcase}} ENTRY - <span class="showlink">More Info</span></p>
+        	  </a>
+        	</li>
+        	{% endif %}
+        	{% endfor %}
+    	</ul>
+    	<p><a href="/archive.html">View Show Archive</a></p>
+    </div></div>
+</div>
+
+<div class="page" id="about">
+	<div class="section"><div class="content right">
+		<h1 class="uplink rightuplink">About Us <a href="#cover" class="smoothScroll">▲</a></h1>
+		<h3>Christs Amateur Dramatics Society (CADS) is the friendliest place to get involved with comedy and drama in Cambridge.</br> Also, we have a tiger</h3>
+		<h3><a href="https://map.cam.ac.uk/#52.206377,0.122760,18,52.206797,0.123025">We put on our shows at the Yusuf Hamied Centre</a></h3>
+    	<p>
+			President: Jodie Coates - <a href="https://www.facebook.com/jodie.coates.7">Facebook</a> - <a href="mailto:jc833@cam.ac.uk">Email</a></br></br>
+			Vice President: <a href="mailto:vc295@cam.ac.uk">Vicky Collins</a></br>
+			Secretary: <a href="mailto:rjs238@cam.ac.uk">Becky Seakins</a></br>
+			Treasurer: <a href="mailto:mv359@cam.ac.uk">Matt Varnam</a></br></br>
+			Stage Managers: <a href="mailto:eatl3@cam.ac.uk">Elisabet Lindgren</a> and <a href="mailto:sp718@cam.ac.uk">Sam Payne</a></br>
+			Tech: <a href="mailto:md637@cam.ac.uk">Mark Danciger</a></br></br>
+			Head of Comedy: Diarmuid Maguire</br>
+			Head of Smokers: <a href="mailto:sp718@cam.ac.uk">Sam Payne</a></br>
+			Head of Creative Writing: <a href="mailto:lw484@cam.ac.uk">Lewis Wade</a></br></br>
+			Webmaster: <a href="mailto:dk484@cam.ac.uk">Dan Karaj</a></br>
+			Publicity: Ciaran Lunt</br></br>
+			Head of Erotica: Sophie Gilbert </br>
+			The Gettysburg Addressee “Recipient of Erotica”: Jess Landy</br>
+			A Dark Planet Lit By No Sun: Tony Leech</br>
+			King of Pantomime: Richard Kish</br>
+			Modern Major General Committee Member: Joe Dutton</br>
+			Nutella Officer: Adam Connolly</br>
+			Awaiting Title: Gerard Martin</br>Former President: Milena Messner</br>Offstage Voice: Alisdair McNab</br>
+			The Dame: Kyle Fearn 
+		</p>
+    </div></div>
+</div>
+
+<div class="page" id="getinvolved">
+	<div class="section"><div class="content">
+		<h1 class="uplink"><a href="#cover" class="smoothScroll">▲</a>&nbsp;Get&nbsp;Involved</h1>
+    	<h3>If you'd like to get involved in any of our shows, <a href="#about" class="smoothScroll">send any of us a message</a> or take a look at our <a href="https://www.facebook.com/ChristsADS">facebook page</a></h3>
+    	<h1>Funding</h1>
+    	<h3>We're happy to provide funding for any original and cutting edge material. If you want more information. <a href="#about" class="smoothScroll">Get in touch with our president and treasurer</a></h3>
+    </div></div>
+</div>

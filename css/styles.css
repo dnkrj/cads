@@ -1,0 +1,177 @@
+body{
+  font: 16px;
+  font-family: 'Quicksand', sans-serif;
+  color:white;
+  height: auto;
+  margin:0 0 0 0;
+  padding:0 0 0 0;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 60px;
+  margin: 0;
+}
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 40px;
+  margin: 0;
+}
+
+p{
+  font-size: 15px;
+  line-height: 17px;
+}
+
+ul{
+  list-style: none;
+  padding-left:0;
+}
+
+a{
+  color:white;
+  text-decoration: none;
+  font-style: normal;
+}
+
+p a{
+  color:white;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.page{
+  height: auto;
+  min-height: 100%;
+  width:100%;
+  margin:0 0 0 0;
+  padding:0 0 0 0;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+  background-size:cover;
+  text-align: center;
+  overflow: hidden;
+}
+
+.showlink {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+
+
+body, html {
+  height: 100%;
+}
+
+#cover {
+  background-color: #f50057;
+  background-image: url('img/background1.jpg');
+  height: 100%;
+}
+
+#contents {
+  height:100%;
+}
+
+#spacer {
+  height:50%;
+  margin-bottom: -150px;
+}
+
+#sections {
+  width: 100%;
+  max-width: 516px;
+  margin:30px auto 0 auto;
+}
+
+#sections li{
+  line-height: 50px;
+  display:inline;
+    border: 1px solid white;
+  margin: 20px 10px 0 10px;
+  padding: 15px;
+  opacity: 0.7;
+}
+
+#sections li:hover{
+  opacity: 1;
+}
+
+#whatson {
+  background-color: #3f51b5;
+  background-image: url('img/background2.jpg');
+}
+
+.section {
+  width:100%;
+  max-width: 960px;
+  min-width: 320px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.content {
+  width:auto;
+  max-width: 580px;
+  min-width: 300px;
+  padding: 100px 10px 0 10px;
+}
+
+#showlist h2{
+  margin-top: -15px;
+  margin-bottom: -15px;
+}
+
+#about {
+  background-color: #03a9f4;
+  background-image: url('img/background3.jpg');
+}
+
+#getinvolved {
+  background-color: #ffc107;
+  background-image: url('img/background4.jpg');
+}
+
+#getinvolved h3 a, #about h3 a, #about p a{
+  text-decoration: underline;
+}
+
+#copy {
+  height: 40px;
+  min-height: 40px;
+  line-height: 40px;
+  background-color: #ffc809;
+}
+
+.uplink {
+  margin-left:-65px;
+}
+
+.rightuplink {
+  margin-right:-65px;
+}
+
+.uplink a{
+  font-style: normal;
+  opacity: 0.7;
+}
+
+.uplink a:hover{
+  opacity: 1;
+}
