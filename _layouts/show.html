@@ -4,16 +4,16 @@ layout: default
 <div id="main" class="page">
   <div id="show">
     <div id="content">
-      <img src="{{ page.showimage }}" id="showimage"/>
+      <img src="{{ page.showimage | relative_url }}" id="showimage"/>
       <p>{{page.showtimes | upcase}} - {{page.showtype | upcase}}</p>
       <h1>{{page.title}}</h1>
       <p>{{page.showprice | upcase}} ENTRY</p>
       {{ content }}
       <p>
         {%if page.date < site.time%}
-        <a href="/archive.html">Back to Archive</a>
+        <a href="{{ "/archive.html" | relative_url }}">Back to Archive</a>
         {%else%}
-        <a href="/index.html#whatson">Back to What's On</a>
+        <a href="{{ "/#whatson" | relative_url }}">Back to What's On</a>
         {%endif%}
       </p>
     </div>
