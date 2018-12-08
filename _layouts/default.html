@@ -4,14 +4,14 @@
 	<meta charset=utf-8 />
 	<meta name="viewport" content="initial-scale=1">
 	<title>{% if page.title %} {{ page.title }} | {% endif %}Christs Amateur Dramatics Society</title>
-	<link rel="stylesheet" href="/css/styles.css"/>
-	{% if page.title %} <link rel="stylesheet" href="/css/show.css"/>
-	{% else %} <link rel="stylesheet" href="/css/index.css"/> {% endif %}
+	<link rel="stylesheet" href="{{ "/css/styles.css" | relative_url }}"/>
+	{% if page.title %} <link rel="stylesheet" href="{{ "/css/show.css" | relative_url }}"/>
+	{% else %} <link rel="stylesheet" href="{{ "/css/index.css" | relative_url }}"/> {% endif %}
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Quicksand:400' rel='stylesheet' type='text/css'>
-	<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+	<link rel="shortcut icon" type="image/png" href="{{ "/favicon.png" | relative_url }}"/>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script type="text/javascript" src="/js/smoothscroll.js"></script>
+	<script type="text/javascript" src="{{ "/js/smoothscroll.js" | relative_url }}"></script>
 	<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
