@@ -6,12 +6,12 @@ title: Show Archive
   <div id="show">
     <div id="content">
       <h1 id="archivetitle">Show Archive</h1>
-      <p><a href="/index.html#whatson">Back to What's On</a></p>
+      <p><a href="{{ "/#whatson" | relative_url }}">Back to What's On</a></p>
       <ul id="showlist">
         {% for post in site.posts %}
         {% if post.date < site.time %}
         <li>
-          <a href="{{ post.url }}">
+          <a href="{{ post.url | relative_url }}">
             <p>{{post.showtimes | upcase}} - {{post.showtype | upcase}}</p>
             <h2>{{ post.title }}</h2>
             <p>{{ post.showprice | upcase}} ENTRY - <span class="showlink">More Info</span></p>
