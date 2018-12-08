@@ -4,7 +4,7 @@ layout: default
 <div class="page" id="cover">
 	<div id="contents">
 		<div id="spacer"></div>
-		<img src="/img/logo.png"/>
+		<img src="{{ "/img/logo.png" | relative_url }}"/>
 		<ul id="sections">
 			<a href="#whatson" class="smoothScroll"><li>What's&nbsp;On</li></a>
 			<a href="#about" class="smoothScroll"><li>About&nbsp;CADS</li></a>
@@ -29,7 +29,7 @@ layout: default
         	{% endif %}
         	{% endfor %}
     	</ul>
-    	<p><a href="/archive.html">View Show Archive</a></p>
+    	<p><a href="{{ "/archive/" | relative_url }}">View Show Archive</a></p>
     </div></div>
 </div>
 
