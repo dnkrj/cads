@@ -11,7 +11,7 @@ layout: default
       {{ content }}
       <p>
         {%if page.date < site.time%}
-        <a href="{{ "/archive.html" | relative_url }}">Back to Archive</a>
+        <a href="{{ "/archive/" | relative_url }}">Back to Archive</a>
         {%else%}
         <a href="{{ "/#whatson" | relative_url }}">Back to What's On</a>
         {%endif%}
